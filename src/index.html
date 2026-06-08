@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- JavaScript -->
+    <script src="/js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="main-header" class="divider"></header>
+
+    <!-- MAIN -->
+    <main class="divider">
+      <!-- HERO -->
+      <section class="hero">
+        <!-- HERO IMAGE -->
+        <img
+          class="hero-img"
+          src="/images/banner.jpg"
+          srcset="/images/banner-sm.jpg 500w, /images/banner.jpg 1200w"
+          alt="Mountain Lake Camping"
+        />
+
+        <!-- CENTER LOGO -->
+        <div class="logo logo--square">
+          <img src="/images/noun_Tent_2517.svg" alt="Sleep Outside Logo" />
+
+          <div>Sleep<span class="highlight">Outside</span></div>
+        </div>
+
+        <!-- MISSION -->
+        <div class="mission">
+          <p>
+            Our mission is to provide you with everything you need to sleep
+            outside comfortably at an affordable price.
+          </p>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="products">
+        <ul class="product-grid">
+          <li>
+            <a href="product_listing/index.html?category=tents">
+              <img src="images/category-tents.svg" alt="Tents" />
+              <h2>Tents</h2>
+            </a>
+          </li>
+          <li>
+            <a href="product_listing/index.html?category=backpacks">
+              <img src="images/category-backpacks.svg" alt="Backpacks" />
+              <h2>Backpacks</h2>
+            </a>
+          </li>
+          <li>
+            <a href="product_listing/index.html?category=sleeping-bags">
+              <img src="images/category-sleepingbags.svg" alt="Sleeping Bags" />
+              <h2>Sleeping Bags</h2>
+            </a>
+          </li>
+          <li>
+            <a href="product_listing/index.html?category=hammocks">
+              <img src="images/category-hammocks.svg" alt="Hammocks" />
+              <h2>Hammocks</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- NEWSLETTER SIGNUP -->
+      <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          Get camping tips, product updates, special offers, and exclusive deals
+          delivered straight to your inbox.
+        </p>
+
+        <form id="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="main-footer"></footer>
+
+    <!-- Modal -->
+    <dialog id="giveawayModal">
+      <button id="closeModal" aria-label="Close modal">&times;</button>
+
+      <h2>Join Sleep Outside!</h2>
+
+      <p>
+        Create a free account with Sleep Outside and enter a free giveaway for
+        one of our products! Sign up now!
+      </p>
+    </dialog>
+  </body>
+</html>
