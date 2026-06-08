@@ -224,14 +224,14 @@ button {
   padding: 1rem;
 }
 
-.product-list {
+.temple-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   list-style: none;
 }
 
-.product-list a {
+.temple-list a {
   text-decoration: none;
   color: var(--dark-grey);
 }
@@ -473,7 +473,7 @@ button {
   }
 
   /* Change Product image sizes based on screen sizes */
-  .product-list {
+  .temple-list {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
