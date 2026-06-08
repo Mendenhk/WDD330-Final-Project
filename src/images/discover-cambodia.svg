@@ -1,0 +1,24 @@
+<svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Angkor Wat stylized 3-peak silhouette -->
+        <g transform="translate(20,32)">
+          <!-- Left smaller tower -->
+          <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37" />
+          <!-- Right smaller tower -->
+          <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37" />
+          <!-- Central main tower (overlaps the sides) -->
+          <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37" />
+
+          <!-- Vertical oval spires on all three peaks -->
+          <!-- Left small spire -->
+          <ellipse cx="12" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
+          <!-- Central main spire (a bit taller) -->
+          <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37" />
+          <!-- Right small spire -->
+          <ellipse cx="58" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
+        </g>
+
+        <text x="110" y="58" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+          fill="#1a1a1a">DISCOVER</text>
+        <text x="110" y="80" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+          fill="#1a1a1a">CAMBODIA</text>
+      </svg>
