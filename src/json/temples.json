@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "name": "Angkor Wat",
+    "khmerName": "អង្គរវត្ត",
+    "image": "images/temples/angkor-wat.webp",
+    "location": {
+      "lat": 13.41250,
+      "lng": 103.86667,
+      "region": "Angkor Archaeological Park",
+      "distanceFromSiemReap": "6 km north"
+    },
+    "built": "1113–1150 AD",
+    "builtBy": "King Suryavarman II",
+    "religion": "Hindu (Vishnu), later Buddhist",
+    "style": "Khmer / Angkor Wat style",
+    "uniqueFact": "The largest religious complex in the world, covering 162.6 hectares. It is the only temple in the Angkor region oriented to the west, symbolizing the direction of death and the setting sun — reflecting its original role as a funerary temple.",
+    "highlights": [
+      "Iconic five-tower silhouette reflected in the surrounding moat",
+      "Over 1,700 apsara (celestial dancer) carvings on the walls",
+      "Famous sunrise viewpoint drawing thousands of visitors daily",
+      "Upper sanctuary (Bakan) offers panoramic views — opens 7:40 AM"
+    ],
+    "openingHours": "5:00 AM – 6:00 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Easy",
+    "tip": "Arrive before 5:30 AM for the iconic sunrise reflection over the moat."
+  },
+  {
+    "id": 2,
+    "name": "Ta Prohm",
+    "khmerName": "តាព្រហ្ម",
+    "image": "images/temples/ta-prohm.webp",
+    "location": {
+      "lat": 13.43500,
+      "lng": 103.88917,
+      "region": "Angkor Archaeological Park",
+      "distanceFromSiemReap": "12 km northeast"
+    },
+    "built": "1186 AD",
+    "builtBy": "King Jayavarman VII",
+    "religion": "Buddhist (Mahayana)",
+    "style": "Khmer / Bayon style",
+    "uniqueFact": "Known as the 'Jungle Temple' and the 'Tomb Raider Temple', Ta Prohm has been intentionally left unrestored, with massive silk-cotton and strangler fig trees growing directly through its towers and galleries — a rare and haunting sight.",
+    "highlights": [
+      "Giant tree roots engulfing ancient stone walls and doorways",
+      "Featured filming location for the movie Tomb Raider (2001)",
+      "Serene and atmospheric, especially beautiful at dawn",
+      "Sanskrit stone inscription details 3,140 villages that once supported the temple"
+    ],
+    "openingHours": "6:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Easy",
+    "tip": "Visit before 10:00 AM — the temple becomes very crowded and noisy by late morning."
+  },
+  {
+    "id": 3,
+    "name": "Angkor Thom",
+    "khmerName": "អង្គរធំ",
+    "image": "images/temples/angkor-thom.webp",
+    "location": {
+      "lat": 13.44167,
+      "lng": 103.85833,
+      "region": "Angkor Archaeological Park",
+      "distanceFromSiemReap": "8 km north"
+    },
+    "built": "Late 12th century AD",
+    "builtBy": "King Jayavarman VII",
+    "religion": "Buddhist (Mahayana)",
+    "style": "Khmer / Bayon style",
+    "uniqueFact": "Angkor Thom ('Great City') was the last capital of the Khmer Empire and once home to nearly one million people — making it one of the largest pre-industrial cities in the world. The city is enclosed by an 8-meter-high wall and a wide moat.",
+    "highlights": [
+      "Five massive entrance gates each topped with giant four-faced towers",
+      "Contains Bayon Temple at its center, famous for 216 serene stone faces",
+      "Terrace of the Elephants — a 350-meter royal viewing platform",
+      "Terrace of the Leper King with intricate multi-layered bas-relief carvings"
+    ],
+    "openingHours": "6:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Moderate (large area to explore)",
+    "tip": "Allow at least half a day — Angkor Thom contains multiple major sites within its walls."
+  },
+  {
+    "id": 4,
+    "name": "Bayon Temple",
+    "khmerName": "ប្រាសាទបាយ័ន",
+    "image": "images/temples/bayon.webp",
+    "location": {
+      "lat": 13.44139,
+      "lng": 103.85917,
+      "region": "Angkor Thom, Angkor Archaeological Park",
+      "distanceFromSiemReap": "9 km north"
+    },
+    "built": "Late 12th – early 13th century AD",
+    "builtBy": "King Jayavarman VII",
+    "religion": "Buddhist (Mahayana)",
+    "style": "Khmer / Bayon style",
+    "uniqueFact": "Bayon's 54 towers each feature four massive faces gazing in the cardinal directions — a total of 216 serene faces that are believed to represent either the Bodhisattva Avalokitesvara or King Jayavarman VII himself watching over his kingdom.",
+    "highlights": [
+      "216 giant stone faces watching from every angle",
+      "Over 1.2 km of bas-relief galleries depicting everyday Khmer life and battles",
+      "Atmospheric at midday when the sun illuminates the faces",
+      "Located at the very center of Angkor Thom"
+    ],
+    "openingHours": "6:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Easy",
+    "tip": "Look for the fascinating bas-reliefs on the lower level showing markets, fishing, and cockfighting — a rare glimpse of everyday Khmer life."
+  },
+  {
+    "id": 5,
+    "name": "Phnom Bakheng",
+    "khmerName": "ភ្នំបាខែង",
+    "image": "images/temples/phnom-bakheng.webp",
+    "location": {
+      "lat": 13.42418,
+      "lng": 103.85601,
+      "region": "Angkor Archaeological Park",
+      "distanceFromSiemReap": "7 km north"
+    },
+    "built": "889–910 AD",
+    "builtBy": "King Yasovarman I",
+    "religion": "Hindu (Shiva)",
+    "style": "Khmer / Bakheng style",
+    "uniqueFact": "Built on a natural 67-meter hill, Phnom Bakheng was the first temple-mountain at Angkor and predates Angkor Wat by over 200 years. It was the state temple of the first Angkorian capital, Yasodharapura.",
+    "highlights": [
+      "Best sunset viewpoint in the Angkor region — views of Angkor Wat in the distance",
+      "108 surrounding towers symbolizing the 4 lunar phases",
+      "Located between Angkor Wat and Angkor Thom — easy to combine",
+      "One of three hilltop temples built by Yasovarman I"
+    ],
+    "openingHours": "5:00 AM – 7:00 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Moderate (steep climb to summit)",
+    "tip": "Arrive at least 45 minutes before sunset — the viewpoint has a visitor cap and fills up quickly."
+  },
+  {
+    "id": 6,
+    "name": "Banteay Srei",
+    "khmerName": "បន្ទាយស្រី",
+    "image": "images/temples/banteay-srei.webp",
+    "location": {
+      "lat": 13.59889,
+      "lng": 103.96278,
+      "region": "Angkor region, Banteay Srei District",
+      "distanceFromSiemReap": "25 km northeast"
+    },
+    "built": "967 AD",
+    "builtBy": "Yajnavaraha (advisor to King Rajendravarman II)",
+    "religion": "Hindu (Shiva and Parvati)",
+    "style": "Khmer / Banteay Srei style",
+    "uniqueFact": "Often called the 'Jewel of Khmer Art', Banteay Srei is built almost entirely of pink sandstone and features the most intricate and well-preserved decorative carvings in all of Angkor. Unlike most Angkorian temples, it was not built by a king but by a court official.",
+    "highlights": [
+      "Extraordinary pink sandstone carvings considered the finest in the Khmer world",
+      "Unusually small and intimate scale compared to other Angkor temples",
+      "Dedicated to Shiva — devata (female deity) carvings are exceptionally detailed",
+      "Consecrated April 22, 967 AD — one of the few Angkorian temples with a known exact date"
+    ],
+    "openingHours": "6:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Easy",
+    "tip": "Combine with Beng Mealea on the same day trip as they are both northeast of Siem Reap."
+  },
+  {
+    "id": 7,
+    "name": "Phnom Krom",
+    "khmerName": "ភ្នំក្រោម",
+    "image": "images/temples/phnom-krom.webp",
+    "location": {
+      "lat": 13.27500,
+      "lng": 103.83500,
+      "region": "Southern Siem Reap, Tonle Sap shoreline",
+      "distanceFromSiemReap": "12 km south"
+    },
+    "built": "Late 9th – early 10th century AD",
+    "builtBy": "King Yasovarman I",
+    "religion": "Hindu (Brahma, Vishnu, Shiva)",
+    "style": "Khmer / Bakheng style",
+    "uniqueFact": "Perched on a 137-meter hill overlooking the Tonle Sap Lake, Phnom Krom is one of three hilltop temples built by Yasovarman I. Its location offers dramatic panoramic views of the vast lake and surrounding floodplains — especially spectacular at sunrise.",
+    "highlights": [
+      "Three towers dedicated to the Hindu trinity: Brahma, Vishnu, and Shiva",
+      "Stunning sunrise and lake views over the Tonle Sap — Southeast Asia's largest lake",
+      "Far fewer tourists than the main Angkor complex",
+      "Active Buddhist monastery at the base of the hill"
+    ],
+    "openingHours": "5:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Moderate (steep hill climb)",
+    "tip": "Visit at sunrise for breathtaking views over the Tonle Sap. Can be combined with a boat trip on the lake."
+  },
+  {
+    "id": 8,
+    "name": "Temple of Preah Vihear",
+    "khmerName": "ព្រះវិហារ",
+    "image": "images/temples/preah-vihear.webp",
+    "location": {
+      "lat": 14.39056,
+      "lng": 104.68028,
+      "region": "Preah Vihear Province, Dângrêk Mountains",
+      "distanceFromSiemReap": "Approx. 140 km north"
+    },
+    "built": "11th–12th century AD",
+    "builtBy": "Suryavarman I and Suryavarman II",
+    "religion": "Hindu (Shiva)",
+    "style": "Khmer / Baphuon and Angkor Wat styles",
+    "uniqueFact": "Dramatically perched on a 525-meter cliff on the Cambodian-Thai border, Preah Vihear was the subject of a landmark 1962 International Court of Justice ruling awarding it to Cambodia. The temple stretches 800 meters along a north-south axis rising up to the sanctuary at the clifftop.",
+    "highlights": [
+      "Breathtaking clifftop location with views across the Cambodian plains",
+      "Five ceremonial gopuras (gateways) rising up the hillside",
+      "UNESCO World Heritage Site since 2008",
+      "Ancient sandstone stairway dating to the 11th century still in use"
+    ],
+    "openingHours": "8:00 AM – 4:30 PM",
+    "admissionIncluded": false,
+    "UNESCO": true,
+    "difficulty": "Moderate (long approach, some climbing)",
+    "tip": "A full-day trip from Siem Reap. Hire a local guide — the history and border dispute context make the visit far richer."
+  },
+  {
+    "id": 9,
+    "name": "Koh Ker",
+    "khmerName": "កោះកេរ",
+    "image": "images/temples/koh-ker.webp",
+    "location": {
+      "lat": 13.79000,
+      "lng": 104.56500,
+      "region": "Preah Vihear Province",
+      "distanceFromSiemReap": "Approx. 120 km northeast"
+    },
+    "built": "921–944 AD",
+    "builtBy": "King Jayavarman IV",
+    "religion": "Hindu (Shiva)",
+    "style": "Khmer / Koh Ker style",
+    "uniqueFact": "Koh Ker served as the capital of the Khmer Empire for 20 years under King Jayavarman IV. Its centerpiece, Prasat Thom, is a seven-tiered pyramid standing 36 meters tall — the tallest Khmer pyramid ever built. The site encompasses over 180 temple structures across the jungle.",
+    "highlights": [
+      "Prasat Thom — a 36-meter seven-tiered sandstone pyramid climbable to the top",
+      "Remote jungle setting with many temples still partially reclaimed by trees",
+      "UNESCO World Heritage Site since 2023",
+      "Over 180 structures spread across the area, many yet to be fully explored"
+    ],
+    "openingHours": "7:30 AM – 5:30 PM",
+    "admissionIncluded": false,
+    "UNESCO": true,
+    "difficulty": "Moderate",
+    "tip": "Often combined with Beng Mealea on a full-day trip from Siem Reap. The road has greatly improved in recent years."
+  },
+  {
+    "id": 10,
+    "name": "Beng Mealea",
+    "khmerName": "បឹងមាលា",
+    "image": "images/temples/beng-mealea.webp",
+    "location": {
+      "lat": 13.47639,
+      "lng": 104.23833,
+      "region": "Siem Reap Province",
+      "distanceFromSiemReap": "67 km east by road"
+    },
+    "built": "Early 12th century AD",
+    "builtBy": "King Suryavarman II",
+    "religion": "Hindu (Vishnu)",
+    "style": "Khmer / Angkor Wat style",
+    "uniqueFact": "Built in the same style and era as Angkor Wat but left almost entirely unrestored, Beng Mealea is dramatically consumed by jungle vegetation with massive stones collapsed into great heaps. Wooden walkways guide visitors through and above the ruins for a true 'lost city' experience.",
+    "highlights": [
+      "Vast ruins almost entirely consumed by jungle — rarely crowded",
+      "Wooden elevated walkways provide safe and dramatic access through the collapse",
+      "Same architectural style as Angkor Wat — like seeing it before restoration",
+      "Diverse birdlife and tranquil jungle atmosphere"
+    ],
+    "openingHours": "7:00 AM – 5:00 PM",
+    "admissionIncluded": false,
+    "UNESCO": false,
+    "difficulty": "Easy to Moderate (some uneven terrain)",
+    "tip": "An excellent half-day trip often combined with Koh Ker. Go early for the best light and fewest crowds."
+  },
+  {
+    "id": 11,
+    "name": "Prasat Wat (Wat Athvea)",
+    "khmerName": "ប្រាសាទវត្តអ័ថ្វា",
+    "image": "images/temples/wat-athvea.webp",
+    "location": {
+      "lat": 13.32360,
+      "lng": 103.84100,
+      "region": "Southern Siem Reap",
+      "distanceFromSiemReap": "6 km south"
+    },
+    "built": "Early 12th century AD (c. 1115–1150)",
+    "builtBy": "King Suryavarman II",
+    "religion": "Hindu (Vishnu), with active Buddhist pagoda alongside",
+    "style": "Khmer / Angkor Wat style",
+    "uniqueFact": "Wat Athvea is unique in that an ancient Vishnuite Khmer temple and a living modern Buddhist pagoda share the same grounds — making it both an archaeological site and an active place of worship. Its name means 'the way' or 'the pass' in Khmer.",
+    "highlights": [
+      "Rare combination of an ancient Hindu temple alongside a functioning Buddhist temple",
+      "Exceptionally detailed devata carvings in the style of Angkor Wat",
+      "Very few tourists — a peaceful alternative to the main circuit",
+      "Located just off the road to the Tonle Sap — easy to combine with a lake visit"
+    ],
+    "openingHours": "6:00 AM – 6:00 PM",
+    "admissionIncluded": true,
+    "UNESCO": false,
+    "difficulty": "Easy",
+    "tip": "A hidden gem close to Siem Reap. Respectful dress required as it is an active religious site."
+  },
+  {
+    "id": 12,
+    "name": "Preah Khan",
+    "khmerName": "ព្រះខ័ន",
+    "image": "images/temples/preah-khan.webp",
+    "location": {
+      "lat": 13.45917,
+      "lng": 103.85972,
+      "region": "Angkor Archaeological Park, Grand Circuit",
+      "distanceFromSiemReap": "10 km north"
+    },
+    "built": "1191 AD",
+    "builtBy": "King Jayavarman VII",
+    "religion": "Buddhist (Mahayana)",
+    "style": "Khmer / Bayon style",
+    "uniqueFact": "Built on the site of the battle where Jayavarman VII defeated the Cham invaders in 1191, Preah Khan ('Sacred Sword') served as both a royal city and a major monastic university with over 1,000 teachers and nearly 100,000 people supporting it.",
+    "highlights": [
+      "Long atmospheric jungle corridors with dappled light filtering through the trees",
+      "Unique two-story circular columned structure unlike anything else at Angkor",
+      "Much less crowded than Angkor Wat or Ta Prohm",
+      "Contains a rare depiction of a two-story building in Angkorian architecture"
+    ],
+    "openingHours": "6:00 AM – 6:30 PM",
+    "admissionIncluded": true,
+    "UNESCO": true,
+    "difficulty": "Easy to Moderate",
+    "tip": "One of the Grand Circuit's highlights — quieter and more exploratory than the small circuit temples."
+  }
+]
