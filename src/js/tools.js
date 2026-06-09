@@ -35,6 +35,8 @@ conversionButton.addEventListener("click", async () => {
     to === "KHR" ? "Cambodian Riel (KHR)" : "US Dollar (USD)";
 });
 
+
+
 //code for weather
 //next: add api weather data to page
 
@@ -105,8 +107,6 @@ getWeather();
 function calculateWindChill(temperature, windSpeed) {
   return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
 }
-
-
 
 /*-------------------- Weather svg's ---------------------*/
 
