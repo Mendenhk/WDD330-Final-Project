@@ -1,0 +1,16 @@
+{
+  "name": "wdd330-final-project",
+  "version": "1.0.0",
+  "description": "Cambodia Travel Website",
+  "main": "main.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "author": "Kris Mendenhall",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.7"
+  }
+}
