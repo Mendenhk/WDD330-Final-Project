@@ -18,10 +18,9 @@ async function getTemples() {
 
 async function init() {
   const temples = await getTemples();
-  console.log(temples); // remove once confirmed working
-  templeCardTemplate(temples);
+  const templeList = document.querySelector(".temple-list"); // update selector to match your HTML
+  templeList.innerHTML = temples.map(templeCardTemplate).join("");
 }
-
 init();
 
 function templeCardTemplate(temple) {
@@ -39,4 +38,6 @@ function templeCardTemplate(temple) {
     </li>
   `;
 }
+
+
 
