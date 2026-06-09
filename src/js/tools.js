@@ -7,6 +7,12 @@ const KHR_RATE = 4100;
 const conversionButton = document.getElementById("convert-btn");
 conversionButton.addEventListener("click", async () => { 
   const amount = parseFloat(document.getElementById("amount").value);
+
+  //error handling if amount input value is null/empty
+  if (!amount || amount <= 0) {
+  document.getElementById("result").textContent = "Please enter a valid amount.";
+  return;
+}
   const from = document.getElementById("currency").value;
   //if from === "USD" then to = KHR, else to = USD
   const to = from === "USD" ? "KHR" : "USD";
