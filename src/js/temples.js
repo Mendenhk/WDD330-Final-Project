@@ -47,12 +47,12 @@ function templeCardTemplate(temple) {
 }
 
 // Heart Button JS
-const btn = document.getElementById('heartBtn');
-  const label = document.getElementById('heartLabel');
-  btn.addEventListener('click', () => {
-    const isFav = btn.classList.toggle('favorited');
-    btn.setAttribute('aria-pressed', isFav);
-    label.textContent = isFav ? 'Saved to favorites' : 'Add to favorites';
-    btn.classList.add('pop');
-    setTimeout(() => btn.classList.remove('pop'), 200);
-  });
+// const btn = document.getElementById('heartBtn');
+//   const label = document.getElementById('heartLabel');
+//   btn.addEventListener('click', () => {
+//     const isFav = btn.classList.toggle('favorited');
+//     btn.setAttribute('aria-pressed', isFav);
+//     label.textContent = isFav ? 'Saved to favorites' : 'Add to favorites';
+//     btn.classList.add('pop');
+//     setTimeout(() => btn.classList.remove('pop'), 200);
+//   });
