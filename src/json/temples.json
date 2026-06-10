@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Angkor Wat",
     "khmerName": "អង្គរវត្ត",
-    "image": "/src/images/temples/angkor-wat.jpg",
+    "image": "../images/temples/angkor-wat.jpg",
     "location": {
       "lat": 13.41250,
       "lng": 103.86667,
@@ -31,7 +31,7 @@
     "id": 2,
     "name": "Ta Prohm",
     "khmerName": "តាព្រហ្ម",
-    "image": "/src/images/temples/ta-prohm.jpg",
+    "image": "../images/temples/ta-prohm.jpg",
     "location": {
       "lat": 13.43500,
       "lng": 103.88917,
@@ -59,7 +59,7 @@
     "id": 3,
     "name": "Angkor Thom",
     "khmerName": "អង្គរធំ",
-    "image": "/src/images/temples/angkor-thom.jpg",
+    "image": "../images/temples/angkor-thom.jpg",
     "location": {
       "lat": 13.44167,
       "lng": 103.85833,
@@ -87,7 +87,7 @@
     "id": 4,
     "name": "Bayon Temple",
     "khmerName": "ប្រាសាទបាយ័ន",
-    "image": "/src/images/temples/bayon.jpg",
+    "image": "../images/temples/bayon.jpg",
     "location": {
       "lat": 13.44139,
       "lng": 103.85917,
@@ -115,7 +115,7 @@
     "id": 5,
     "name": "Phnom Bakheng",
     "khmerName": "ភ្នំបាខែង",
-    "image": "/src/images/temples/phnom-bakheng.jpg",
+    "image": "../images/temples/phnom-bakheng.jpg",
     "location": {
       "lat": 13.42418,
       "lng": 103.85601,
@@ -143,7 +143,7 @@
     "id": 6,
     "name": "Banteay Srei",
     "khmerName": "បន្ទាយស្រី",
-    "image": "/src/images/temples/banteay-srei.jpg",
+    "image": "../images/temples/banteay-srei.jpg",
     "location": {
       "lat": 13.59889,
       "lng": 103.96278,
@@ -171,7 +171,7 @@
     "id": 7,
     "name": "Phnom Krom",
     "khmerName": "ភ្នំក្រោម",
-    "image": "/src/images/temples/phnom-krom.jpg",
+    "image": "../images/temples/phnom-krom.jpg",
     "location": {
       "lat": 13.27500,
       "lng": 103.83500,
@@ -199,7 +199,7 @@
     "id": 8,
     "name": "Temple of Preah Vihear",
     "khmerName": "ព្រះវិហារ",
-    "image": "/src/images/temples/preah-vihear.jpg",
+    "image": "../images/temples/preah-vihear.jpg",
     "location": {
       "lat": 14.39056,
       "lng": 104.68028,
@@ -227,7 +227,7 @@
     "id": 9,
     "name": "Koh Ker",
     "khmerName": "កោះកេរ",
-    "image": "/src/images/temples/koh-ker.jpg",
+    "image": "../images/temples/koh-ker.jpg",
     "location": {
       "lat": 13.79000,
       "lng": 104.56500,
@@ -255,7 +255,7 @@
     "id": 10,
     "name": "Beng Mealea",
     "khmerName": "បឹងមាលា",
-    "image": "/src/images/temples/beng-mealea.jpg",
+    "image": "../images/temples/beng-mealea.jpg",
     "location": {
       "lat": 13.47639,
       "lng": 104.23833,
@@ -283,7 +283,7 @@
     "id": 11,
     "name": "Prasat Wat (Wat Athvea)",
     "khmerName": "ប្រាសាទវត្តអ័ថ្វា",
-    "image": "/src/images/temples/wat-athvea.jpg",
+    "image": "../images/temples/wat-athvea.jpg",
     "location": {
       "lat": 13.32360,
       "lng": 103.84100,
@@ -311,7 +311,7 @@
     "id": 12,
     "name": "Preah Khan",
     "khmerName": "ព្រះខ័ន",
-    "image": "/src/images/temples/preah-khan.jpg",
+    "image": "../images/temples/preah-khan.jpg",
     "location": {
       "lat": 13.45917,
       "lng": 103.85972,
