@@ -20,6 +20,16 @@ async function init() {
   const temples = await getTemples();
   const templeList = document.querySelector(".temple-list"); // update selector to match your HTML
   templeList.innerHTML = temples.map(templeCardTemplate).join("");
+
+  // Heart Button JS
+  document.querySelectorAll(".heart-btn").forEach(heartBtn => {
+  heartBtn.addEventListener("click", () => {
+    heartBtn.classList.toggle("favorited");
+    //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
+    heartBtn.classList.add("pop");
+    setTimeout(() => heartBtn.classList.remove("pop"), 200);
+  });
+});
 }
 init();
 
@@ -28,7 +38,7 @@ function templeCardTemplate(temple) {
     <li class="temple-card">
       <img src="${temple.image}" alt="${temple.name}">
       
-      <div class="heart-btn" id="heartBtn" aria-label="Add to favorites" aria-pressed="false">
+      <div class="heart-btn" id="heart-btn">
         <svg class="heart-svg" width="48" height="48" viewBox="0 0 24 24">
           <path class="heart-path" d="M12 21C12 21 3 13.5 3 8a4.5 4.5 0 0 1 9-0.9A4.5 4.5 0 0 1 21 8c0 5.5-9 13-9 13z"/>
         </svg>
@@ -46,13 +56,4 @@ function templeCardTemplate(temple) {
   `;
 }
 
-// Heart Button JS
-// const btn = document.getElementById('heartBtn');
-//   const label = document.getElementById('heartLabel');
-//   btn.addEventListener('click', () => {
-//     const isFav = btn.classList.toggle('favorited');
-//     btn.setAttribute('aria-pressed', isFav);
-//     label.textContent = isFav ? 'Saved to favorites' : 'Add to favorites';
-//     btn.classList.add('pop');
-//     setTimeout(() => btn.classList.remove('pop'), 200);
-//   });
+
