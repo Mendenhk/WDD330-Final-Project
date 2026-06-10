@@ -76,7 +76,8 @@ export async function loadTemplate(path) {
 
 export async function loadHeaderFooter() {
   //allows the footer and header to be displayed at any level file
-  const isSubPage = window.location.pathname.includes("/temples/") || window.location.pathname.includes("/tools/");
+  const isSubPage = window.location.pathname.includes("/temples/") || 
+                    window.location.pathname.includes("/tools/");
   const base = isSubPage ? "../" : "./";
 
   const headerTemplate = await loadTemplate(`${base}partials/header.html`);
@@ -87,6 +88,15 @@ export async function loadHeaderFooter() {
 
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
+
+  // Fix header links based on depth
+  headerElement.querySelectorAll("a[href], img[src]").forEach(el => {
+    const attr = el.tagName === "A" ? "href" : "src";
+    const val = el.getAttribute(attr);
+    if (val && val.startsWith("/src/")) {
+      el.setAttribute(attr, val.replace("/src/", isSubPage ? "../" : "./"));
+    }
+  });
 }
 
 //   // ensure breadcrumb element exists as a sibling after header so it sits below header border
