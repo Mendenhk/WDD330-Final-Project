@@ -27,6 +27,13 @@ function templeCardTemplate(temple) {
   return `
     <li class="temple-card">
       <img src="${temple.image}" alt="${temple.name}">
+      
+      <div class="heart-btn" id="heartBtn" aria-label="Add to favorites" aria-pressed="false">
+        <svg class="heart-svg" width="48" height="48" viewBox="0 0 24 24">
+          <path class="heart-path" d="M12 21C12 21 3 13.5 3 8a4.5 4.5 0 0 1 9-0.9A4.5 4.5 0 0 1 21 8c0 5.5-9 13-9 13z"/>
+        </svg>
+      </div>
+
       <h3>${temple.name}</h3>
       <p class="khmer-name">${temple.khmerName}</p>
       <p>${temple.uniqueFact}</p>
@@ -39,5 +46,13 @@ function templeCardTemplate(temple) {
   `;
 }
 
-
-
+// Heart Button JS
+const btn = document.getElementById('heartBtn');
+  const label = document.getElementById('heartLabel');
+  btn.addEventListener('click', () => {
+    const isFav = btn.classList.toggle('favorited');
+    btn.setAttribute('aria-pressed', isFav);
+    label.textContent = isFav ? 'Saved to favorites' : 'Add to favorites';
+    btn.classList.add('pop');
+    setTimeout(() => btn.classList.remove('pop'), 200);
+  });

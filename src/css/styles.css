@@ -1042,3 +1042,48 @@ footer {
 }
 
 /* End carousel styles */
+
+/* kriston: temples.html */
+.temple-card {
+  position: relative;
+}
+
+
+
+
+/* kriston: favorites button styles */
+.heart-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+  }
+  /* .heart-btn:hover { background: var(--color-background-secondary); } */
+  /* .heart-svg { transition: transform 0.15s cubic-bezier(.36,1.6,.6,1); } */
+  /* .heart-btn:active .heart-svg { transform: scale(0.88); } */
+  /* .heart-btn.pop .heart-svg { transform: scale(1.28); } */
+  /* .heart-path {
+    fill: none;
+    stroke: var(--color-text-primary);
+    stroke-width: 2;
+    transition: fill 0.2s, stroke 0.2s;
+  } */
+  /* .heart-btn.favorited .heart-path {
+    fill: #e63946;
+    stroke: #e63946;
+  } */
+  /* .label {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-top: 4px;
+    transition: color 0.2s;
+  } */
+  /* .heart-btn.favorited + .label { color: #e63946; } */
