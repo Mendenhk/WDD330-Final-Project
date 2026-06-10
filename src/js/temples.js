@@ -4,7 +4,7 @@ import { loadHeaderFooter} from "./utils.mjs";
 loadHeaderFooter();
 
 async function getTemples() {
-  const response = await fetch('/src/json/temples.json');
+  const response = await fetch('../json/temples.json');
   if (response.ok) {
     return await response.json();
   } else {

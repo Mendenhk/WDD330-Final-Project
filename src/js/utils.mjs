@@ -75,14 +75,19 @@ export async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  const headerTemplate = await loadTemplate("/src/partials/header.html");
-  const footerTemplate = await loadTemplate("/src/partials/footer.html");
+  //allows the footer and header to be displayed at any level file
+  const isSubPage = window.location.pathname.includes("/temples/") || window.location.pathname.includes("/tools/");
+  const base = isSubPage ? "../" : "./";
+
+  const headerTemplate = await loadTemplate(`${base}partials/header.html`);
+  const footerTemplate = await loadTemplate(`${base}partials/footer.html`);
 
   const headerElement = document.getElementById("main-header");
   const footerElement = document.getElementById("main-footer");
 
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
+}
 
 //   // ensure breadcrumb element exists as a sibling after header so it sits below header border
 //   let breadcrumbEl = document.getElementById("site-breadcrumb");
@@ -98,7 +103,7 @@ export async function loadHeaderFooter() {
 
 //   updateCartCount();
 //   initSearch();
-}
+// }. maybe not supposed to be here
 
 // function prettifyCategory(raw) {
 //   if (!raw) return "";
