@@ -91,11 +91,12 @@ export async function loadHeaderFooter() {
 
   // Fix header links based on depth
   headerElement.querySelectorAll("a[href], img[src]").forEach(el => {
-    const attr = el.tagName === "A" ? "href" : "src";
-    const val = el.getAttribute(attr);
-    if (val && val.startsWith("/src/")) {
-      el.setAttribute(attr, val.replace("/src/", isSubPage ? "../" : "./"));
-    }
+  const attr = el.tagName === "A" ? "href" : "src";
+  const val = el.getAttribute(attr);
+  if (val && val.startsWith("/src/")) {
+    const stripped = val.replace("/src/", "");  // e.g. "images/discover-cambodia.svg"
+    el.setAttribute(attr, base + stripped);     // e.g. "../images/discover-cambodia.svg"
+  }
   });
 }
 
