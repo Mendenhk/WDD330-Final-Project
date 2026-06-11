@@ -77,7 +77,8 @@ export async function loadTemplate(path) {
 export async function loadHeaderFooter() {
   //allows the footer and header to be displayed at any level file
   const isSubPage = window.location.pathname.includes("/temples/") || 
-                    window.location.pathname.includes("/tools/");
+                    window.location.pathname.includes("/tools/") ||
+                    window.location.pathname.includes("/favorites/");
   const base = isSubPage ? "../" : "./";
 
   const headerTemplate = await loadTemplate(`${base}partials/header.html`);
