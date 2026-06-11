@@ -1,0 +1,182 @@
+[
+  {
+    "id": "001",
+    "name": "Kakao Chocolate Factory",
+    "khmerName": "រោងចក្រសូកូឡា កាកាវ",
+    "category": "food",
+    "location": "Siem Reap",
+    "description": "Cambodia's first and only bean-to-bar chocolate factory, sourcing cacao directly from local Cambodian farmers.",
+    "uniqueFact": "Cambodia grows some of Southeast Asia's finest cacao, and this factory was the first to process it entirely on Cambodian soil.",
+    "highlights": [
+      "Guided tour of the full chocolate-making process from bean to bar",
+      "Taste test of single-origin Cambodian chocolate",
+      "Watch tempering and molding in action",
+      "Purchase unique souvenirs and gift boxes"
+    ],
+    "tip": "Book a tour in advance — group sizes are small and slots fill quickly.",
+    "openingHours": "9:00 AM – 5:00 PM",
+    "image": "/src/images/beyond/kakao-chocolate.jpg"
+  },
+  {
+    "id": "002",
+    "name": "Tonle Sap Floating Village",
+    "khmerName": "ភូមិអណ្តែតទន្លេសាប",
+    "category": "nature",
+    "location": "Chong Kneas, Siem Reap",
+    "description": "Southeast Asia's largest freshwater lake hosts entire floating villages that dramatically shift between wet and dry seasons.",
+    "uniqueFact": "The lake expands from 2,500 km² in the dry season to over 16,000 km² in the wet season — entire communities move with it.",
+    "highlights": [
+      "Boat tour through the floating village",
+      "Visit the floating school and health clinic",
+      "Watch fishermen haul in their catch",
+      "Stunning sunset views over the water"
+    ],
+    "tip": "Visit between October and December when water levels are high and the village is most impressive.",
+    "openingHours": "7:00 AM – 6:00 PM",
+    "image": "/src/images/beyond/tonle-sap.jpg"
+  },
+  {
+    "id": "003",
+    "name": "Angkor National Museum",
+    "khmerName": "សារមន្ទីរជាតិអង្គរ",
+    "category": "culture",
+    "location": "Siem Reap",
+    "description": "A world-class museum dedicated to the Khmer civilization and the Angkor period, with over 1,000 artifacts across eight themed galleries.",
+    "uniqueFact": "The Gallery of a Thousand Buddhas houses one of the largest collections of Buddha statues in Southeast Asia.",
+    "highlights": [
+      "Gallery of a Thousand Buddhas",
+      "Multimedia presentations on Khmer history",
+      "Detailed scale models of Angkor Wat",
+      "Artifacts spanning over 1,000 years of Khmer civilization"
+    ],
+    "tip": "Visit before touring the temples — the context makes the ruins far more meaningful.",
+    "openingHours": "8:30 AM – 6:00 PM",
+    "image": "/src/images/beyond/angkor-museum.jpg"
+  },
+  {
+    "id": "004",
+    "name": "Cambodia Landmine Museum",
+    "khmerName": "សារមន្ទីរមីនកម្ពុជា",
+    "category": "history",
+    "location": "Siem Reap Province",
+    "description": "Founded by former child soldier and deminer Aki Ra, this museum documents Cambodia's tragic landmine history and ongoing demining efforts.",
+    "uniqueFact": "Aki Ra personally defused thousands of landmines by hand using basic tools before founding the museum and the Cambodian Self Help Demining organization.",
+    "highlights": [
+      "Displays of defused mines and unexploded ordnance",
+      "Aki Ra's personal story and demining journey",
+      "Information on ongoing demining efforts across Cambodia",
+      "Proceeds support the relief center for landmine victims"
+    ],
+    "tip": "Combine with a visit to the War Museum nearby. Allow time — this is a deeply moving experience.",
+    "openingHours": "7:30 AM – 5:30 PM",
+    "image": "/src/images/beyond/landmine-museum.jpg"
+  },
+  {
+    "id": "005",
+    "name": "The Muffin Man Café",
+    "khmerName": "ហាងកាហ្វេ មាហ្វីន ម៉ែន",
+    "category": "food",
+    "location": "Siem Reap",
+    "description": "A beloved bakery café famous across Siem Reap for its extraordinary rotating selection of Basque cheesecakes in flavors you won't find anywhere else.",
+    "uniqueFact": "The Basque cheesecake here has developed a cult following among expats and travelers — flavors rotate daily and sell out fast.",
+    "highlights": [
+      "Rotating daily Basque cheesecake flavors",
+      "Fresh baked pastries and artisan breads",
+      "Excellent coffee in a relaxed garden setting",
+      "Popular with locals and expats alike"
+    ],
+    "tip": "Arrive early or pre-order your cheesecake — popular flavors are gone by mid-morning.",
+    "openingHours": "7:00 AM – 4:00 PM",
+    "image": "/src/images/beyond/muffin-man.jpg"
+  },
+  {
+    "id": "006",
+    "name": "Spoons Restaurant",
+    "khmerName": "ភោជនីយដ្ឋាន ស្ពូន",
+    "category": "food",
+    "location": "Siem Reap",
+    "description": "A social enterprise restaurant staffed entirely by disadvantaged Cambodian youth who are trained in hospitality and culinary arts.",
+    "uniqueFact": "Every meal you eat directly funds vocational training and education for at-risk Cambodian youth, giving them a path out of poverty.",
+    "highlights": [
+      "Authentic Khmer cuisine prepared by students",
+      "Watch trainees develop real hospitality skills",
+      "Rotating seasonal menu featuring local ingredients",
+      "Meaningful dining experience that directly supports the community"
+    ],
+    "tip": "Make a reservation — it fills up quickly, especially in peak season.",
+    "openingHours": "11:00 AM – 9:00 PM",
+    "image": "/src/images/beyond/spoons-restaurant.jpg"
+  },
+  {
+    "id": "007",
+    "name": "Phnom Kulen National Park",
+    "khmerName": "ឧទ្យានជាតិភ្នំគូលែន",
+    "category": "nature",
+    "location": "Siem Reap Province",
+    "description": "A sacred mountain plateau considered the birthplace of the Khmer Empire, featuring stunning waterfalls, ancient carvings, and a reclining Buddha.",
+    "uniqueFact": "The riverbed at Kbal Spean is carved with hundreds of lingas and Hindu iconography — bathing in this water is considered a sacred blessing.",
+    "highlights": [
+      "Two-tiered waterfall perfect for swimming",
+      "Kbal Spean river of a thousand lingas",
+      "Giant reclining Buddha carved into a cliff",
+      "Jungle trekking through protected forest"
+    ],
+    "tip": "Go early and on a weekday — it gets very crowded on weekends with local visitors. Bring cash for the entrance fee.",
+    "openingHours": "7:00 AM – 5:00 PM",
+    "image": "/src/images/beyond/phnom-kulen.jpg"
+  },
+  {
+    "id": "008",
+    "name": "Steamed Palm Cake",
+    "khmerName": "នំស្លាប់ស្រស់",
+    "category": "food",
+    "location": "Preah Dak Village / Siem Reap Markets",
+    "description": "A traditional Cambodian street snack made from palm sugar and rice flour, steamed in small clay pots and best eaten warm straight from the vendor.",
+    "uniqueFact": "Preah Dak village near Angkor is considered the best place in Cambodia to try this cake, made from palms grown on the surrounding floodplain.",
+    "highlights": [
+      "Watch vendors prepare and steam the cakes fresh",
+      "Taste the difference between palm sugar and regular sugar",
+      "Buy directly from village producers in Preah Dak",
+      "Also available at Siem Reap's Old Market"
+    ],
+    "tip": "Eat them immediately while warm — they lose their texture within an hour of being made.",
+    "openingHours": "Early morning – sold out by noon",
+    "image": "/src/images/beyond/palm-cake.jpg"
+  },
+  {
+    "id": "009",
+    "name": "Angkor Splash Water Park",
+    "khmerName": "កន្លែងលេងទឹក អង្គរ ស្ផ្លែស",
+    "category": "recreation",
+    "location": "Siem Reap",
+    "description": "A family-friendly water park offering a fun local experience popular with Cambodian families and a great way to cool off in the tropical heat.",
+    "uniqueFact": "This is where local Siem Reap families spend their weekends — visiting gives you a genuine glimpse into everyday Cambodian leisure culture.",
+    "highlights": [
+      "Water slides and splash pools",
+      "Wave pool and lazy river",
+      "Affordable local food stalls inside the park",
+      "Great people-watching and local cultural experience"
+    ],
+    "tip": "Go on a weekday for shorter lines. Bring your own towel as rentals are limited.",
+    "openingHours": "9:00 AM – 6:00 PM",
+    "image": "/src/images/beyond/water-park.jpg"
+  },
+  {
+    "id": "010",
+    "name": "Artisans Angkor",
+    "khmerName": "សិប្បករអង្គរ",
+    "category": "culture",
+    "location": "Siem Reap",
+    "description": "A social enterprise workshop preserving traditional Khmer craftsmanship by training rural youth in silk weaving, stone carving, lacquerware, and wood carving.",
+    "uniqueFact": "All artisans are recruited from poor rural communities and receive fair wages, healthcare, and housing — making every purchase a direct investment in Cambodian heritage.",
+    "highlights": [
+      "Free guided workshop tours showing craftspeople at work",
+      "Watch silk weaving on traditional looms",
+      "Stone and wood carving demonstrations",
+      "High quality authentic souvenirs and gifts"
+    ],
+    "tip": "The workshop tour is free and fascinating — even if you don't buy anything it's worth the visit.",
+    "openingHours": "7:30 AM – 6:30 PM",
+    "image": "/src/images/beyond/artisans-angkor.jpg"
+  }
+]
