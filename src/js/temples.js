@@ -28,7 +28,7 @@ async function init() {
     //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
     heartBtn.classList.add("pop");
     setTimeout(() => heartBtn.classList.remove("pop"), 200);
-    //creats favorites list in local storage
+    //creats favorites list in local storage or removes unfavorited
     const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     if(isFavorited) {
