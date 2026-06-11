@@ -24,10 +24,19 @@ async function init() {
   // Heart Button JS
   document.querySelectorAll(".heart-btn").forEach(heartBtn => {
   heartBtn.addEventListener("click", () => {
-    heartBtn.classList.toggle("favorited");
+    const isFavorited = heartBtn.classList.toggle("favorited");
     //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
     heartBtn.classList.add("pop");
     setTimeout(() => heartBtn.classList.remove("pop"), 200);
+    //creats favorites list in local storage
+    const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    if(isFavorited) {
+      favorites.push(thisTemple);
+    } else {
+      favorites = favorites.filter(element => element.name !== thisTemple.name);
+    }
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   });
 });
 }
@@ -38,7 +47,7 @@ function templeCardTemplate(temple) {
     <li class="temple-card">
       <img src="${temple.image}" alt="${temple.name}">
       
-      <div class="heart-btn" id="heart-btn">
+      <div class="heart-btn" data-name="${temple.name}">
         <svg class="heart-svg" width="48" height="48" viewBox="0 0 24 24">
           <path class="heart-path" d="M12 21C12 21 3 13.5 3 8a4.5 4.5 0 0 1 9-0.9A4.5 4.5 0 0 1 21 8c0 5.5-9 13-9 13z"/>
         </svg>
