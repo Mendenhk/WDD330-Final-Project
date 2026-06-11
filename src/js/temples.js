@@ -1,5 +1,5 @@
 //kriston: next: transfer "getData" method from the class ExternalServices from externalservices.mjs to this file and use to extract temples.json
-import { loadHeaderFooter} from "./utils.mjs";
+import { loadHeaderFooter, getLocalStorage, setLocalStorage } from "./utils.mjs";
 
 loadHeaderFooter();
 
@@ -18,27 +18,30 @@ async function getTemples() {
 
 async function init() {
   const temples = await getTemples();
-  const templeList = document.querySelector(".temple-list"); // update selector to match your HTML
+  const templeList = document.querySelector(".temple-list"); 
+  //below renders temple cards
   templeList.innerHTML = temples.map(templeCardTemplate).join("");
 
-  // Heart Button JS
+  // Heart Button JS-adds heart buttons to temple cards
   document.querySelectorAll(".heart-btn").forEach(heartBtn => {
-  heartBtn.addEventListener("click", () => {
-    const isFavorited = heartBtn.classList.toggle("favorited");
-    //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
-    heartBtn.classList.add("pop");
-    setTimeout(() => heartBtn.classList.remove("pop"), 200);
-    //creats favorites list in local storage or removes unfavorited
-    const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
-    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    if(isFavorited) {
-      favorites.push(thisTemple);
-    } else {
-      favorites = favorites.filter(element => element.name !== thisTemple.name);
-    }
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    heartBtn.addEventListener("click", () => {
+      const isFavorited = heartBtn.classList.toggle("favorited");
+      //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
+      heartBtn.classList.add("pop");
+      setTimeout(() => heartBtn.classList.remove("pop"), 200);
+      //creats favorites list in local storage or removes unfavorited
+      const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
+      let favorites = getLocalStorage("favorites") || [];
+      if(isFavorited) {
+        favorites.push(thisTemple);
+      } else {
+        favorites = favorites.filter(element => element.name !== thisTemple.name);
+      }
+      setLocalStorage("favorites", favorites);
+    });
   });
-});
+  
+  syncFavoriteButtons();
 }
 init();
 
@@ -68,4 +71,14 @@ function templeCardTemplate(temple) {
   `;
 }
 
-
+function syncFavoriteButtons(){
+  const favoriteOn = getLocalStorage("favorites") || [];
+  favoriteOn.forEach(element => {
+    //selects the heart button with a specific data(key/value) pair
+    const btn = document.querySelector(`.heart-btn[data-name="${element.name}"]`);
+    if(btn) {
+      btn.classList.add("favorited");
+    }
+  });
+}
+// code for Google maps embeded API (an external API for mapping my temples)

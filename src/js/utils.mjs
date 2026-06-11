@@ -2,12 +2,12 @@
 //   return parent.querySelector(selector);
 // }
 
-// export function getLocalStorage(key) {
-//   return JSON.parse(localStorage.getItem(key));
-// }
-// export function setLocalStorage(key, data) {
-//   localStorage.setItem(key, JSON.stringify(data));
-// }
+export function getLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
 
 // export function setClick(selector, callback) {
 //   qs(selector).addEventListener("touchend", (event) => {
@@ -181,7 +181,7 @@ export async function loadHeaderFooter() {
 //   });
 // }
 
-// //kriston: code added to create a superscript on backpack icon
+// //kriston: code added to create a superscript on backpack icon.  this code was borrowed from the group project so the "cart" was kept the same
 // export function updateCartCount() {
 //   const cartItems = getLocalStorage("so-cart") || [];
 //   const cartCount = document.querySelector(".cart-count");
