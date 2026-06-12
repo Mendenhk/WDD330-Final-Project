@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "name": "Kakao Chocolate Factory",
+    "name": "Wat Chocolate Factory",
     "khmerName": "រោងចក្រសូកូឡា កាកាវ",
     "category": "food",
     "location": "Siem Reap",
@@ -15,7 +15,9 @@
     ],
     "tip": "Book a tour in advance — group sizes are small and slots fill quickly.",
     "openingHours": "9:00 AM – 5:00 PM",
-    "image": "/src/images/beyond/kakao-chocolate.jpg"
+    "image": "/src/images/beyond/wat-chocolate.webp",
+    "latitude": 13.3633,
+    "longitude": 103.8564
   },
   {
     "id": "002",
@@ -33,7 +35,9 @@
     ],
     "tip": "Visit between October and December when water levels are high and the village is most impressive.",
     "openingHours": "7:00 AM – 6:00 PM",
-    "image": "/src/images/beyond/tonle-sap.jpg"
+    "image": "/src/images/beyond/floating-village.jpg",
+    "latitude": 13.2614,
+    "longitude": 103.8261
   },
   {
     "id": "003",
@@ -51,7 +55,9 @@
     ],
     "tip": "Visit before touring the temples — the context makes the ruins far more meaningful.",
     "openingHours": "8:30 AM – 6:00 PM",
-    "image": "/src/images/beyond/angkor-museum.jpg"
+    "image": "/src/images/beyond/angkor-museum.jpg",
+    "latitude": 13.3617,
+    "longitude": 103.8554
   },
   {
     "id": "004",
@@ -69,7 +75,9 @@
     ],
     "tip": "Combine with a visit to the War Museum nearby. Allow time — this is a deeply moving experience.",
     "openingHours": "7:30 AM – 5:30 PM",
-    "image": "/src/images/beyond/landmine-museum.jpg"
+    "image": "/src/images/beyond/landmine-museum.jpg",
+    "latitude": 13.4356,
+    "longitude": 103.8453
   },
   {
     "id": "005",
@@ -87,7 +95,9 @@
     ],
     "tip": "Arrive early or pre-order your cheesecake — popular flavors are gone by mid-morning.",
     "openingHours": "7:00 AM – 4:00 PM",
-    "image": "/src/images/beyond/muffin-man.jpg"
+    "image": "/src/images/beyond/muffin-man.jpg",
+    "latitude": 13.3556,
+    "longitude": 103.8550
   },
   {
     "id": "006",
@@ -105,7 +115,9 @@
     ],
     "tip": "Make a reservation — it fills up quickly, especially in peak season.",
     "openingHours": "11:00 AM – 9:00 PM",
-    "image": "/src/images/beyond/spoons-restaurant.jpg"
+    "image": "/src/images/beyond/spoons-restaurant.jpg",
+    "latitude": 13.3540,
+    "longitude": 103.8590
   },
   {
     "id": "007",
@@ -123,7 +135,9 @@
     ],
     "tip": "Go early and on a weekday — it gets very crowded on weekends with local visitors. Bring cash for the entrance fee.",
     "openingHours": "7:00 AM – 5:00 PM",
-    "image": "/src/images/beyond/phnom-kulen.jpg"
+    "image": "/src/images/beyond/phnom-kulen.jpg",
+    "latitude": 13.5760,
+    "longitude": 103.8550
   },
   {
     "id": "008",
@@ -141,25 +155,29 @@
     ],
     "tip": "Eat them immediately while warm — they lose their texture within an hour of being made.",
     "openingHours": "Early morning – sold out by noon",
-    "image": "/src/images/beyond/palm-cake.jpg"
+    "image": "/src/images/beyond/palm-cake.webp",
+    "latitude": 13.4189,
+    "longitude": 103.8631
   },
   {
     "id": "009",
-    "name": "Angkor Splash Water Park",
-    "khmerName": "កន្លែងលេងទឹក អង្គរ ស្ផ្លែស",
+    "name": "Water Park Khna",
+    "khmerName": "ឃ្នារ វ៉ាទែរ ផាក",
     "category": "recreation",
     "location": "Siem Reap",
-    "description": "A family-friendly water park offering a fun local experience popular with Cambodian families and a great way to cool off in the tropical heat.",
-    "uniqueFact": "This is where local Siem Reap families spend their weekends — visiting gives you a genuine glimpse into everyday Cambodian leisure culture.",
+    "description": "A humble, locally loved water park on the outskirts of Siem Reap, with multiple pools, water slides, and a restaurant serving Khmer food — a great way to cool off in the tropical heat.",
+    "uniqueFact": "This is where local Siem Reap families spend their weekends — visiting gives you a genuine glimpse into everyday Cambodian leisure culture, and you'll likely be the only foreigner there.",
     "highlights": [
-      "Water slides and splash pools",
-      "Wave pool and lazy river",
-      "Affordable local food stalls inside the park",
-      "Great people-watching and local cultural experience"
+      "Several open-air water slides for kids and adults",
+      "Crystal-clear main pool plus a kiddie pool with enclosed slide",
+      "Affordable on-site restaurant serving Khmer dishes, beer, and soft drinks",
+      "Entry vouchers usable for food or slide access"
     ],
-    "tip": "Go on a weekday for shorter lines. Bring your own towel as rentals are limited.",
+    "tip": "Visit on a weekday — Sundays and holidays get very crowded. Bring your own towel, and budget around $3 for entry.",
     "openingHours": "9:00 AM – 6:00 PM",
-    "image": "/src/images/beyond/water-park.jpg"
+    "image": "/src/images/beyond/water-park.jpg",
+    "latitude": 13.3100,
+    "longitude": 103.8200
   },
   {
     "id": "010",
@@ -177,6 +195,8 @@
     ],
     "tip": "The workshop tour is free and fascinating — even if you don't buy anything it's worth the visit.",
     "openingHours": "7:30 AM – 6:30 PM",
-    "image": "/src/images/beyond/artisans-angkor.jpg"
+    "image": "/src/images/beyond/artisans-angkor.jpg",
+    "latitude": 13.3580,
+    "longitude": 103.8480
   }
 ]
