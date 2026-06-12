@@ -78,7 +78,8 @@ export async function loadHeaderFooter() {
   //allows the footer and header to be displayed at any level file
   const isSubPage = window.location.pathname.includes("/temples/") || 
                     window.location.pathname.includes("/tools/") ||
-                    window.location.pathname.includes("/favorites/");
+                    window.location.pathname.includes("/favorites/") ||
+                    window.location.pathname.includes("/beyond-temples/");
   const base = isSubPage ? "../" : "./";
 
   const headerTemplate = await loadTemplate(`${base}partials/header.html`);
