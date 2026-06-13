@@ -75,11 +75,13 @@ export async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  //allows the footer and header to be displayed at any level file
-  const isSubPage = window.location.pathname.includes("/temples/") || 
-                    window.location.pathname.includes("/tools/") ||
-                    window.location.pathname.includes("/favorites/") ||
-                    window.location.pathname.includes("/beyond-temples/");
+  //allows links to be accessed at any depth.
+  const isSubPage =
+    window.location.pathname.includes("/temples/") ||
+    window.location.pathname.includes("/tools/") ||
+    window.location.pathname.includes("/favorites/") ||
+    window.location.pathname.includes("/beyond-temples/");
+
   const base = isSubPage ? "../" : "./";
 
   const headerTemplate = await loadTemplate(`${base}partials/header.html`);
@@ -91,14 +93,16 @@ export async function loadHeaderFooter() {
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
 
-  // Fix header links based on depth
-  headerElement.querySelectorAll("a[href], img[src]").forEach(el => {
-  const attr = el.tagName === "A" ? "href" : "src";
-  const val = el.getAttribute(attr);
-  if (val && val.startsWith("/src/")) {
-    const stripped = val.replace("/src/", "");  // e.g. "images/discover-cambodia.svg"
-    el.setAttribute(attr, base + stripped);     // e.g. "../images/discover-cambodia.svg"
-  }
+  fixHeaderFooterPaths(base);
+}
+
+function fixHeaderFooterPaths(base) {
+  document.querySelectorAll("[data-src]").forEach((el) => {
+    el.src = base + el.dataset.src;
+  });
+
+  document.querySelectorAll("[data-href]").forEach((el) => {
+    el.href = base + el.dataset.href;
   });
 }
 
