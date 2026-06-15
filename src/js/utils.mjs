@@ -80,7 +80,8 @@ export async function loadHeaderFooter() {
     window.location.pathname.includes("/temples/") ||
     window.location.pathname.includes("/tools/") ||
     window.location.pathname.includes("/favorites/") ||
-    window.location.pathname.includes("/beyond-temples/");
+    window.location.pathname.includes("/beyond-temples/") ||
+    window.location.pathname.includes("/temple-map/");
 
   const base = isSubPage ? "../" : "./";
 

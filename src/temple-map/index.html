@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Cambodia — Temples Map</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/3.6.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    :root {
+      --jungle: #1f3d2e;
+      --gold: #c9a14a;
+      --cream: #f4efe2;
+      --clay: #b5573a;
+      --ink: #2b2620;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* html,
+    body {
+      margin: 0;
+      height: 100%;
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--ink);
+    } */
+
+    header {
+      /* background: var(--jungle); */
+      color: var(--cream);
+      /* padding: 14px 20px; */
+      /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: space-between; */
+      /* font-family: "Trebuchet MS", sans-serif; */
+      /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); */
+      /* z-index: 2; */
+      position: relative;
+    }
+
+    /* main h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.06em;
+      font-family: "Georgia", serif;
+      font-weight: normal;
+    } */
+
+    /* main h1 span {
+      color: var(--gold);
+    } */
+
+    .map-main {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    #map {
+      /* position: absolute;
+      top: 150px;
+      bottom: 100px;
+      left: 0;
+      right: 0; */
+      width: 100%;
+      height: 600px;
+    }
+
+    /* Temple marker */
+    .marker {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--cream);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="divider" id="main-header"></header>
+
+  <main class="map-main">
+    <h2>
+      Temple Map: <span class="title highlight"></span>
+    </h2>
+    <div id="map"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/3.6.0/mapbox-gl.js"></script>
+    <script src="../js/config.js"></script>
+    <script type="module" src="../js/temple-map.js"></script>
+  </main>
+  <footer id="main-footer"></footer>
+</body>
+
+</html>
