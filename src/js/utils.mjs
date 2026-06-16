@@ -95,6 +95,7 @@ export async function loadHeaderFooter() {
   renderWithTemplate(footerTemplate, footerElement);
 
   fixHeaderFooterPaths(base);
+  updateFavoriteCount()
 }
 
 function fixHeaderFooterPaths(base) {
@@ -187,25 +188,20 @@ function fixHeaderFooterPaths(base) {
 //   });
 // }
 
-// //kriston: code added to create a superscript on backpack icon.  this code was borrowed from the group project so the "cart" was kept the same
-// export function updateCartCount() {
-//   const cartItems = getLocalStorage("so-cart") || [];
-//   const cartCount = document.querySelector(".cart-count");
+// //kriston: code added to create a superscript on favorited icon.  this code was borrowed from the work I did on the group project.
+export function updateFavoriteCount() {
+  const favoriteItems = getLocalStorage("favorites") || [];
+  const favoriteCount = document.querySelector(".likes-count");
+  const heartSvg = document.querySelector(".heart-svg");
 
-//   const totalItems = cartItems.reduce((total, item) => {
-//     return total + (item.quantity || 1);
-//   }, 0);
+  const totalItems = favoriteItems.length;
 
-//   const cartIcon = document.querySelector(".cart")
-//   cartIcon.classList.add("flash-it")
+  //if (favoriteCount) is a safety for if favoriteCount does not exist
+  if (favoriteCount) {
+    favoriteCount.textContent = totalItems;
+  }
 
-//   cartIcon.addEventListener("animationend", () => {
-//     cartIcon.classList.remove("flash-it")
-//   })
+  //the second parameter of toggle is a conditional statement for if "filled-heart" is added or removed
+  heartSvg.classList.toggle("filled-heart", totalItems > 0);
 
-
-//   // remove the if statement when all pages contain the cart count.
-//   if (cartCount) {
-//     cartCount.textContent = totalItems;
-//   }
-// }
+}

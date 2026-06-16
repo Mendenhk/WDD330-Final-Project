@@ -155,22 +155,22 @@ button {
 
 /* End utility classes */
 
-/* Cart icon styles */
-.cart {
+/* liked heart icon styles */
+.liked-heart {
   padding-top: 1em;
   position: relative;
   text-align: center;
 }
 
-.cart svg {
-  width: 25px;
+.liked-heart svg {
+  width: 30px;
 }
 
-.cart:hover svg {
+.liked-heart:hover svg {
   fill: gray;
 }
 
-/* End cart icon styles */
+/* End liked-heart icon styles */
 
 .mission {
   position: absolute;
@@ -501,11 +501,11 @@ footer {
   background: none;
 }
 
-/*----- kriston:  CSS for the backpack superscript ----------*/
-.cart-count {
+/*----- kriston:  CSS for the liked superscript ----------*/
+.likes-count {
   position: absolute;
-  top: 7px;
-  right: -3px;
+  top: 50px;
+  right: 15px;
 
   background-color: yellowgreen;
   color: white;
@@ -1072,6 +1072,14 @@ footer {
   stroke-width: 2;
 }
 
+.heart-svg .heart-path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.heart-svg.filled-heart .heart-path {
+  animation: fillHeart 0.3s forwards;
+}
+
 .heart-btn.favorited .heart-path {
   animation: fillHeart 0.3s ease forwards;
 }
@@ -1085,17 +1093,35 @@ footer {
 }
 
 @keyframes fillHeart {
-  from { fill: rgba(255, 255, 255, 0.5); }
-  to   { fill: #e63946; }
+  from {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  to {
+    fill: #e63946;
+  }
 }
 
 @keyframes unfillHeart {
-  from { fill: #e63946; }
-  to   { fill: rgba(255, 255, 255, 0.5); }
+  from {
+    fill: #e63946;
+  }
+
+  to {
+    fill: rgba(255, 255, 255, 0.5);
+  }
 }
 
 @keyframes popHeart {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.28); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.28);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

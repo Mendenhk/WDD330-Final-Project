@@ -1,5 +1,5 @@
 //kriston: next: transfer "getData" method from the class ExternalServices from externalservices.mjs to this file and use to extract temples.json
-import { loadHeaderFooter, getLocalStorage, setLocalStorage } from "./utils.mjs";
+import { loadHeaderFooter, getLocalStorage, setLocalStorage, updateFavoriteCount } from "./utils.mjs";
 
 loadHeaderFooter();
 
@@ -18,7 +18,7 @@ async function getTemples() {
 
 async function init() {
   const temples = await getTemples();
-  const templeList = document.querySelector(".temple-list"); 
+  const templeList = document.querySelector(".temple-list");
   //below renders temple cards
   templeList.innerHTML = temples.map(templeCardTemplate).join("");
 
@@ -32,15 +32,16 @@ async function init() {
       //creats favorites list in local storage or removes unfavorited
       const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
       let favorites = getLocalStorage("favorites") || [];
-      if(isFavorited) {
+      if (isFavorited) {
         favorites.push(thisTemple);
       } else {
         favorites = favorites.filter(element => element.name !== thisTemple.name);
       }
       setLocalStorage("favorites", favorites);
+      updateFavoriteCount();
     });
   });
-  
+
   syncFavoriteButtons();
 }
 init();
@@ -71,12 +72,12 @@ function templeCardTemplate(temple) {
   `;
 }
 
-function syncFavoriteButtons(){
+function syncFavoriteButtons() {
   const favoriteOn = getLocalStorage("favorites") || [];
   favoriteOn.forEach(element => {
     //selects the heart button with a specific data(key/value) pair
     const btn = document.querySelector(`.heart-btn[data-name="${element.name}"]`);
-    if(btn) {
+    if (btn) {
       btn.classList.add("favorited");
     }
   });
