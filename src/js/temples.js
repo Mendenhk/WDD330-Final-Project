@@ -42,10 +42,9 @@ async function init() {
     templeList.innerHTML = searchList.map(templeCardTemplate).join("");
     attachHeartListeners(searchList);
     attachDirectionListeners(searchList);
-    syncFavoriteButtons();
     templeSearch.value = "";
   });
-
+  syncFavoriteButtons();
 }
 init();
 
