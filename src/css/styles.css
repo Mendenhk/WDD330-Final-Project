@@ -1235,28 +1235,3 @@ li {
   padding: 0.25rem 0;
   list-style: none;
 }
-
-
-
-
-
-/* 🌤️ partly cloudy emoticon (large window) */
-
-/*Below is the basic footer for all pages*/
-footer {
-  grid-column: 1/4;
-  place-items: center;
-  background-color: var(--cambodia-blue);
-  color: white;
-  padding: 1rem;
-}
-
-footer p {
-  text-align: center;
-  color: white;
-}
-
-#lastModified {
-  font-size: 14px;
-  color: yellow;
-}
