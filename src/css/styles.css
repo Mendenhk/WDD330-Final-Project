@@ -31,9 +31,19 @@ img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  background-color: white;
+}
+
+main {
+  padding-top: 107px;
 }
 
 /* Breadcrumb styles */
