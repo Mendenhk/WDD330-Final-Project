@@ -19,30 +19,30 @@ async function getTemples() {
 async function init() {
   const temples = await getTemples();
   const templeList = document.querySelector(".temple-list");
+  const templeSearchForm = document.querySelector(".temple-search");
+  const templeSearch = document.querySelector(".search-input");
   //below renders temple cards
   templeList.innerHTML = temples.map(templeCardTemplate).join("");
+  attachHeartListeners(temples);
 
-  // Heart Button JS-adds heart buttons to temple cards
-  document.querySelectorAll(".heart-btn").forEach(heartBtn => {
-    heartBtn.addEventListener("click", () => {
-      const isFavorited = heartBtn.classList.toggle("favorited");
-      //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
-      heartBtn.classList.add("pop");
-      setTimeout(() => heartBtn.classList.remove("pop"), 200);
-      //creats favorites list in local storage or removes unfavorited
-      const thisTemple = temples.find(t => t.name === heartBtn.dataset.name);
-      let favorites = getLocalStorage("favorites") || [];
-      if (isFavorited) {
-        favorites.push(thisTemple);
-      } else {
-        favorites = favorites.filter(element => element.name !== thisTemple.name);
-      }
-      setLocalStorage("favorites", favorites);
-      updateFavoriteCount();
-    });
+  //Search filtering
+  templeSearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const searchList = temples.filter((element) => element.name.toLowerCase().includes(`${templeSearch.value.toLowerCase()}`));
+    if (searchList.length === 0) {
+      templeList.innerHTML = `
+      <li class="no-results">
+        No temples found matching "${templeSearch.value}"
+      </li>
+    `;
+      return;
+    }
+    templeList.innerHTML = searchList.map(templeCardTemplate).join("");
+    attachHeartListeners(searchList);
+    syncFavoriteButtons();
+    templeSearch.value = "";
   });
 
-  syncFavoriteButtons();
 }
 init();
 
@@ -83,3 +83,25 @@ function syncFavoriteButtons() {
   });
 }
 // code for Google maps embeded API (an external API for mapping my temples)
+
+function attachHeartListeners(templeArray) {
+  // Heart Button JS-adds heart buttons to temple cards
+  document.querySelectorAll(".heart-btn").forEach(heartBtn => {
+    heartBtn.addEventListener("click", () => {
+      const isFavorited = heartBtn.classList.toggle("favorited");
+      //adds the pop class used for adding a pop (increase in size) to the heart when clicked then is removed.
+      heartBtn.classList.add("pop");
+      setTimeout(() => heartBtn.classList.remove("pop"), 200);
+      //creats favorites list in local storage or removes unfavorited
+      const thisTemple = templeArray.find(t => t.name === heartBtn.dataset.name);
+      let favorites = getLocalStorage("favorites") || [];
+      if (isFavorited) {
+        favorites.push(thisTemple);
+      } else {
+        favorites = favorites.filter(element => element.name !== thisTemple.name);
+      }
+      setLocalStorage("favorites", favorites);
+      updateFavoriteCount();
+    });
+  });
+}
