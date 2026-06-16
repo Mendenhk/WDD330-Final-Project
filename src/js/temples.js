@@ -35,6 +35,7 @@ async function init() {
         No temples found matching "${templeSearch.value}"
       </li>
     `;
+      templeSearch.value = "";
       return;
     }
     templeList.innerHTML = searchList.map(templeCardTemplate).join("");
