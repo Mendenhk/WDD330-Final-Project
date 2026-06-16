@@ -17,14 +17,22 @@ async function getBeyond() {
 
 async function init() {
   const beyonds = await getBeyond();
-  const beyondList = document.querySelector(".temple-list");
+  const beyondListElement = document.querySelector(".temple-list");
   //below renders beyond cards
-  beyondList.innerHTML = beyonds.map(beyondCardTemplate).join("");
+  beyondListElement.innerHTML = beyonds.map(beyondCardTemplate).join("");
 
   //category dropdown event listener
-  const categoryDropdown = document.querySelector("#category");
+  const categoryDropdown = document.getElementById("category");
   categoryDropdown.addEventListener("change", () => {
-    filterByCategory(beyonds, categoryDropdown.value, beyondList);
+    filterByCategory(beyonds, categoryDropdown.value, beyondListElement);
+  });
+
+  //sort by distance button
+  const distanceBtn = document.getElementById("sort-by-distance");
+  distanceBtn.addEventListener("click", () => {
+    //resets the dropdown menu.
+    categoryDropdown.value = "all"
+    sortByDistance(beyonds, beyondListElement);
   });
 
   // syncFavoriteButtons();
@@ -37,6 +45,7 @@ function beyondCardTemplate(beyond) {
       <img src="${beyond.image}" alt="${beyond.name}">
       <h3>${beyond.name}</h3>
       <p class="khmer-name">${beyond.khmerName}</p>
+      <p class="siem-distance">distance from Siem Reap: ${getDistanceFromSiemReap(beyond.latitude, beyond.longitude).toFixed(2)} miles</p>
       <p>${beyond.uniqueFact}</p>
       <ul>
         ${beyond.highlights.map(h => `<li>${h}</li>`).join("")}
@@ -47,13 +56,36 @@ function beyondCardTemplate(beyond) {
   `;
 }
 
-function filterByCategory(list, category, beyondList) {
+function filterByCategory(list, category, beyondListElement) {
   if (category !== "all") {
     const filteredList = list.filter((element) => element.category === category);
-    beyondList.innerHTML = filteredList.map(beyondCardTemplate).join("");
+    beyondListElement.innerHTML = filteredList.map(beyondCardTemplate).join("");
   } else {
-    beyondList.innerHTML = list.map(beyondCardTemplate).join("");
+    beyondListElement.innerHTML = list.map(beyondCardTemplate).join("");
   }
+}
+
+function sortByDistance(list, beyondListElement) {
+  const sortedList = list.sort((a, b) => getDistanceFromSiemReap(a.latitude, a.longitude) - getDistanceFromSiemReap(b.latitude, b.longitude));
+  beyondListElement.innerHTML = sortedList.map(beyondCardTemplate).join("");
+}
+
+//below is the function for the haversine distance from Siem Reap, gotten from AI.
+function getDistanceFromSiemReap(lat2, lng2) {
+  const R = 6371; // km
+  const lat1 = 13.3671;
+  const lng1 = 103.8448;
+  const toRad = deg => deg * (Math.PI / 180);
+
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
 }
 
 // function syncFavoriteButtons(){
