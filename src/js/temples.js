@@ -24,6 +24,7 @@ async function init() {
   //below renders temple cards
   templeList.innerHTML = temples.map(templeCardTemplate).join("");
   attachHeartListeners(temples);
+  attachDirectionListeners(temples);
 
   //Search filtering
   templeSearchForm.addEventListener("submit", (event) => {
@@ -40,6 +41,7 @@ async function init() {
     }
     templeList.innerHTML = searchList.map(templeCardTemplate).join("");
     attachHeartListeners(searchList);
+    attachDirectionListeners(searchList);
     syncFavoriteButtons();
     templeSearch.value = "";
   });
@@ -60,7 +62,12 @@ function templeCardTemplate(temple) {
 
       <h3>${temple.name}</h3>
       <p class="khmer-name">${temple.khmerName}</p>
-      <p class="religion">Relition: ${temple.religion}</p>
+
+      <button class="direction-btn" data-name="${temple.name}">
+        Get Directions
+      </button>
+
+      <p class="religion">Religion: ${temple.religion}</p>
       <p class=built-by>Built buy: ${temple.builtBy}</p>
       <p class="when-built">When built: ${temple.built}</p>
       <p>${temple.uniqueFact}</p>
@@ -83,7 +90,6 @@ function syncFavoriteButtons() {
     }
   });
 }
-// code for Google maps embeded API (an external API for mapping my temples)
 
 function attachHeartListeners(templeArray) {
   // Heart Button JS-adds heart buttons to temple cards
@@ -103,6 +109,21 @@ function attachHeartListeners(templeArray) {
       }
       setLocalStorage("favorites", favorites);
       updateFavoriteCount();
+    });
+  });
+}
+
+//function for adding event listeners for linking to google maps externally
+function attachDirectionListeners(templeArray) {
+  document.querySelectorAll(".direction-btn").forEach(directionBtn => {
+    directionBtn.addEventListener("click", () => {
+      const thisTemple = templeArray.find(
+        t => t.name === directionBtn.dataset.name
+      );
+      const origin = encodeURIComponent("Siem Reap, Cambodia");
+      const destination = `${thisTemple.location.lat},${thisTemple.location.lng}`;
+      const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
+      window.open(googleMapsUrl, "_blank");
     });
   });
 }
