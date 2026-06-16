@@ -111,13 +111,13 @@ function calculateWindChill(temperature, windSpeed) {
 /*-------------------- Weather svg's ---------------------*/
 
 const conditionsSVG = {
-    thunder: "/src/images/weather-icons/thunder.svg",
-    rain: "/src/images/weather-icons/rain.svg",
-    partly: "/src/images/weather-icons/images/partly.svg",
-    cloud: "/src/images/weather-icons/cloudy.svg",
-    clear: "/src/images/weather-icons/clear.svg",
-    fog: "/src/images/weather-icons/fog.svg",
-    default: "/src/images/weather-icons/default.svg"
+    thunder: "../images/weather-icons/thunder.svg",
+    rain: "../images/weather-icons/rain.svg",
+    partly: "../images/weather-icons/images/partly.svg",
+    cloud: "../images/weather-icons/cloudy.svg",
+    clear: "../images/weather-icons/clear.svg",
+    fog: "../images/weather-icons/fog.svg",
+    default: "../images/weather-icons/default.svg"
 }
 
 //in this function, "includes" is used because the weather api has many types of conditions.

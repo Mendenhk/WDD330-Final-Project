@@ -1,29 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discover Cambodia | Tools</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../js/tools.js" type="module"></script>
-  </head>
 
-  <body>
-    <header class="divider" id="main-header"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Cambodia | Tools</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/tools.js" type="module"></script>
+</head>
 
-    <main class="tools">
-      <section class="currency-converter">
-        <select id="currency">
-          <option value="USD">US Dollar (USD)</option>
-          <option value="KHR">Cambodian Riel (KHR)</option>
-        </select>
-        <input type="number" id="amount" placeholder="Amount"/>
-        <button id="convert-btn">Convert</button>
-        <p id="dollar-riel">Cambodian Riel (KHR)</p>
-        <p id="result"></p>
-      </section>
-      <section class="weather">
-        <h2>Weather</h2>
+<body>
+  <header class="divider" id="main-header"></header>
+
+  <main class="tools">
+    <section class="currency-converter">
+      <h2>Currency Converter</h2>
+      <select id="currency">
+        <h2>Currency Converter</h2>
+        <option value="USD">US Dollar (USD)</option>
+        <option value="KHR">Cambodian Riel (KHR)</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button id="convert-btn">Convert</button>
+      <p id="dollar-riel">Cambodian Riel (KHR)</p>
+      <p id="result"></p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
       <!--partly cloudy iphone icon (small window)-->
       <img class="weatherSVG">
       <ul class="r-justify-list">
@@ -38,43 +42,125 @@
         <li class="windSpeed">Loading...</li>
         <li class="wind-chill">32°C</li>
       </ul>
-      </section>
-      <section class="language">
-        <h2>Useful Khmer Phrases</h2>
-  <table class="khmer-phrases">
-    <thead>
-      <tr>
-        <th>English</th>
-        <th>Khmer Script</th>
-        <th>Pronunciation</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Hello</td><td>សួស្តី</td><td>Suostei</td></tr>
-      <tr><td>Thank you</td><td>អរគុណ</td><td>Awkun</td></tr>
-      <tr><td>You're welcome</td><td>មិនអីទេ</td><td>Min ei te</td></tr>
-      <tr><td>Yes</td><td>បាទ / ចាស</td><td>Bat (male) / Jas (female)</td></tr>
-      <tr><td>No</td><td>ទេ</td><td>Te</td></tr>
-      <tr><td>Excuse me / Sorry</td><td>សុំទោស</td><td>Som tos</td></tr>
-      <tr><td>How much does this cost?</td><td>តម្លៃប៉ុន្មាន?</td><td>Domlai ponmaan?</td></tr>
-      <tr><td>Too expensive</td><td>ថ្លៃពេក</td><td>Tlai pek</td></tr>
-      <tr><td>Where is the bathroom?</td><td>បង្គន់នៅឯណា?</td><td>Bongkun nov ae na?</td></tr>
-      <tr><td>I don't understand</td><td>ខ្ញុំមិនយល់ទេ</td><td>Knyom min yul te</td></tr>
-      <tr><td>Can you help me?</td><td>អាចជួយខ្ញុំបានទេ?</td><td>Aj juoy knyom ban te?</td></tr>
-      <tr><td>I would like...</td><td>ខ្ញុំចង់បាន...</td><td>Knyom jong ban...</td></tr>
-      <tr><td>Delicious</td><td>ឆ្ងាញ់</td><td>Chhngayn</td></tr>
-      <tr><td>Water</td><td>ទឹក</td><td>Teuk</td></tr>
-      <tr><td>Please take me to...</td><td>សូមទៅ...</td><td>Som tov...</td></tr>
-      <tr><td>Turn left / right</td><td>បត់ឆ្វេង / ស្តាំ</td><td>Bot chveng / sdam</td></tr>
-      <tr><td>Stop here</td><td>ឈប់ត្រង់នេះ</td><td>Chhub trong nih</td></tr>
-      <tr><td>Call the police</td><td>ហៅប៉ូលិស</td><td>Hav polis</td></tr>
-      <tr><td>I need a doctor</td><td>ខ្ញុំត្រូវការពេទ្យ</td><td>Knyom trov kar pet</td></tr>
-      <tr><td>Goodbye</td><td>លាហើយ</td><td>Lia haey</td></tr>
-    </tbody>
-  </table>
-      </section>
-    </main>
+    </section>
+    
+    <section class="language">
+      <h2>Useful Khmer Phrases</h2>
+      <table class="khmer-phrases">
+        <thead>
+          <tr>
+            <th>English</th>
+            <th>Khmer Script</th>
+            <th>Pronunciation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hello</td>
+            <td>សួស្តី</td>
+            <td>Suostei</td>
+          </tr>
+          <tr>
+            <td>Thank you</td>
+            <td>អរគុណ</td>
+            <td>Awkun</td>
+          </tr>
+          <tr>
+            <td>You're welcome</td>
+            <td>មិនអីទេ</td>
+            <td>Min ei te</td>
+          </tr>
+          <tr>
+            <td>Yes</td>
+            <td>បាទ / ចាស</td>
+            <td>Bat (male) / Jas (female)</td>
+          </tr>
+          <tr>
+            <td>No</td>
+            <td>ទេ</td>
+            <td>Te</td>
+          </tr>
+          <tr>
+            <td>Excuse me / Sorry</td>
+            <td>សុំទោស</td>
+            <td>Som tos</td>
+          </tr>
+          <tr>
+            <td>How much does this cost?</td>
+            <td>តម្លៃប៉ុន្មាន?</td>
+            <td>Domlai ponmaan?</td>
+          </tr>
+          <tr>
+            <td>Too expensive</td>
+            <td>ថ្លៃពេក</td>
+            <td>Tlai pek</td>
+          </tr>
+          <tr>
+            <td>Where is the bathroom?</td>
+            <td>បង្គន់នៅឯណា?</td>
+            <td>Bongkun nov ae na?</td>
+          </tr>
+          <tr>
+            <td>I don't understand</td>
+            <td>ខ្ញុំមិនយល់ទេ</td>
+            <td>Knyom min yul te</td>
+          </tr>
+          <tr>
+            <td>Can you help me?</td>
+            <td>អាចជួយខ្ញុំបានទេ?</td>
+            <td>Aj juoy knyom ban te?</td>
+          </tr>
+          <tr>
+            <td>I would like...</td>
+            <td>ខ្ញុំចង់បាន...</td>
+            <td>Knyom jong ban...</td>
+          </tr>
+          <tr>
+            <td>Delicious</td>
+            <td>ឆ្ងាញ់</td>
+            <td>Chhngayn</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>ទឹក</td>
+            <td>Teuk</td>
+          </tr>
+          <tr>
+            <td>Please take me to...</td>
+            <td>សូមទៅ...</td>
+            <td>Som tov...</td>
+          </tr>
+          <tr>
+            <td>Turn left / right</td>
+            <td>បត់ឆ្វេង / ស្តាំ</td>
+            <td>Bot chveng / sdam</td>
+          </tr>
+          <tr>
+            <td>Stop here</td>
+            <td>ឈប់ត្រង់នេះ</td>
+            <td>Chhub trong nih</td>
+          </tr>
+          <tr>
+            <td>Call the police</td>
+            <td>ហៅប៉ូលិស</td>
+            <td>Hav polis</td>
+          </tr>
+          <tr>
+            <td>I need a doctor</td>
+            <td>ខ្ញុំត្រូវការពេទ្យ</td>
+            <td>Knyom trov kar pet</td>
+          </tr>
+          <tr>
+            <td>Goodbye</td>
+            <td>លាហើយ</td>
+            <td>Lia haey</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-    <footer id="main-footer"></footer>
-  </body>
+  <footer id="main-footer"></footer>
+</body>
+
 </html>
