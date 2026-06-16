@@ -17,18 +17,24 @@ async function getBeyond() {
 
 async function init() {
   const beyonds = await getBeyond();
-  const beyondList = document.querySelector(".temple-list"); 
+  const beyondList = document.querySelector(".temple-list");
   //below renders beyond cards
   beyondList.innerHTML = beyonds.map(beyondCardTemplate).join("");
-  
-  syncFavoriteButtons();
+
+  //category dropdown event listener
+  const categoryDropdown = document.querySelector("#category");
+  categoryDropdown.addEventListener("change", () => {
+    filterByCategory(beyonds, categoryDropdown.value, beyondList);
+  });
+
+  // syncFavoriteButtons();
 }
 init();
 
 function beyondCardTemplate(beyond) {
   return `
     <li class="beyond-card">
-      <img src="${beyond.image}" alt="${beyond .name}">
+      <img src="${beyond.image}" alt="${beyond.name}">
       <h3>${beyond.name}</h3>
       <p class="khmer-name">${beyond.khmerName}</p>
       <p>${beyond.uniqueFact}</p>
@@ -41,14 +47,22 @@ function beyondCardTemplate(beyond) {
   `;
 }
 
-function syncFavoriteButtons(){
-  const favoriteOn = getLocalStorage("favorites") || [];
-  favoriteOn.forEach(element => {
-    //selects the heart button with a specific data(key/value) pair
-    const btn = document.querySelector(`.heart-btn[data-name="${element.name}"]`);
-    if(btn) {
-      btn.classList.add("favorited");
-    }
-  });
+function filterByCategory(list, category, beyondList) {
+  if (category !== "all") {
+    const filteredList = list.filter((element) => element.category === category);
+    beyondList.innerHTML = filteredList.map(beyondCardTemplate).join("");
+  } else {
+    beyondList.innerHTML = list.map(beyondCardTemplate).join("");
+  }
 }
-// code for Google maps embeded API (an external API for mapping my temples)
+
+// function syncFavoriteButtons(){
+//   const favoriteOn = getLocalStorage("favorites") || [];
+//   favoriteOn.forEach(element => {
+//     //selects the heart button with a specific data(key/value) pair
+//     const btn = document.querySelector(`.heart-btn[data-name="${element.name}"]`);
+//     if(btn) {
+//       btn.classList.add("favorited");
+//     }
+//   });
+// }
